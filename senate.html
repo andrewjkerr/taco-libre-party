@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Taco Libre Party | Senate</title>
+	
+	<!-- Bootstrap MIT license: https://github.com/twbs/bootstrap/blob/master/LICENSE --->
+	<!-- Bootswatch MIT license: https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE --->
+		
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	
+	<!-- Font Awesome! -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		
+	<style>
+		body {
+		  	padding-top: 50px;
+			background-color: #aaa;
+		}
+		footer{
+			font-size:12px;
+		}
+		#footer-left{
+			text-align: left;
+		}
+		#footer-center{
+			text-align: center;
+		}
+		#footer-right{
+			float: right;
+		}
+		
+		@media (max-width: 991px){
+			#header-image{
+				width: 80%;
+			}
+			#footer-left{
+				text-align: center;
+			}
+			#footer-center{
+				text-align: center;
+			}
+			#footer-right{
+				display: none;
+			}
+		}
+	</style>
+	
+	<script>
+	var end = new Date('02/18/2014 8:00 AM');
+
+	var _second = 1000;
+	var _minute = _second * 60;
+	var _hour = _minute * 60;
+	var _day = _hour * 24;
+	var timer;
+
+	function showRemaining() {
+		var now = new Date();
+		var distance = end - now;
+		if (distance < 0) {
+
+			clearInterval(timer);
+			document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+			return;
+		}
+		var days = Math.floor(distance / _day);
+		var hours = Math.floor((distance % _day) / _hour);
+		var minutes = Math.floor((distance % _hour) / _minute);
+		var seconds = Math.floor((distance % _minute) / _second);
+
+		document.getElementById('countdown').innerHTML = days + ' days, ';
+		document.getElementById('countdown').innerHTML += hours + ' hrs, ';
+		document.getElementById('countdown').innerHTML += minutes + ' mins, and ';
+		document.getElementById('countdown').innerHTML += seconds + ' secs until a Tacorific election!';
+	}
+
+	timer = setInterval(showRemaining, 1000);
+	</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Taco Libre Party | Senate</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="executive.html">Executive</a></li>
+            <li class="active"><a href="senate.html">Senate</a></li>
+          </ul>
+		  <ul class="nav navbar-nav navbar-right">			  
+	          <li><a href="http://www.facebook.com/tacolibrepartyuf"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+	          <li><a href="http://www.twitter.com/tacolibreparty"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+	</div>
+
+    <div class="container" style="background-color: #eee;">
+		<div class="row" style="padding: 40px 15px">
+			<img src="images/taco-libre.png" id="header-image" style="margin: 0 auto; display: block;">
+		</div>
+
+		<hr style="margin: 0px; color: #777; display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 0 auto; padding: 0; width: 91% "/>
+		
+		<div class="row" style="margin-top: 20px; margin-bottom: 30px">
+			<div class="col-md-12" style="text-align: center">
+				<h1>Taco Libre Party Senate</h1>
+			</div>
+		</div>
+	
+		<hr style="margin: 0px; color: #777; display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 0 auto; padding: 0; width: 91% "/>
+	
+		<!-- CLAS, Enginering, Business, Agriculture -->
+		<div class="row" style="margin-top: 20px">
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">CLAS</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>William Burchfield</li>
+						  <li>Miranda McCrown</li>
+						  <li>Sarah Miller</li>
+						  <li>Carlotta Murri</li>
+						  <li>Daniel Solernou</li>
+                          <li>Robert Levin</li>
+					  </ul>
+	              </div>
+	            </div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Engineering</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Jorge Norgaad</li>
+						  <li>Boone Porcher</li>
+						  <li>Jeff Rosenthall</li>
+					  </ul>
+					  <br />
+					  <br />
+					  <br />
+	              </div>
+	            </div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Business</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Kevin Chong</li>
+						  <li>Joanna Garcia</li>
+					  </ul>
+					  <br />
+					  <br />
+					  <br />
+					  <br />
+	              </div>
+	            </div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Agriculture</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Khaled Abdelhany</li>
+						  <li>Shannon Hill</li>
+						  <li>Zechariah Riojas</li>
+					  </ul>
+					  <br />
+					  <br />
+					  <br />
+	              </div>
+	            </div>
+			</div>
+		</div>
+		
+		<hr style="margin: 0px; color: #777; display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 0 auto; padding: 0; width: 91% "/>
+		
+		<!-- Journalism, Accounting, Education, Fine Arts -->
+		<div class="row" style="margin-top: 20px">
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Journalism</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Brittany Birsner</li>
+					  </ul>
+                      <br />
+	              </div>
+	            </div>
+			</div>
+			<!--div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Accounting</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>TBD</li>
+					  </ul>
+					  <br />
+	              </div>
+	            </div>
+			</div-->
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Education</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Paige Milch</li>
+					  </ul>
+					  <br />
+	              </div>
+	            </div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Fine Arts</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Jamie Miller</li>
+					  </ul>
+					  <br />
+	              </div>
+	            </div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Nursing</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Natalie Aguilar</li>
+					  </ul>
+					  <br />
+	              </div>
+	            </div>
+			</div>
+        </div>
+		
+		<hr style="margin: 0px; color: #777; display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 0 auto; padding: 0; width: 91% "/>
+		
+		<!-- Architecture, Building Construction, Graduate, Medical -->
+		<div class="row" style="margin-top: 20px">
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Architecture</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Kevin Lane</li>
+					  </ul>
+					  <br />
+	              </div>
+	            </div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Building Construction</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Mark Werley</li>
+					  </ul>
+					  <br />
+	              </div>
+	            </div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Medical</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Zachary Boucher</li>
+					  </ul>
+					  <br />
+	              </div>
+	            </div>
+			</div>
+            <div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Health and Human Performance</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Anja Fowler</li>
+					  </ul>
+	              </div>
+	            </div>
+			</div>
+		</div>
+		
+		<hr style="margin: 0px; color: #777; display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 0 auto; padding: 0; width: 91% "/>
+		
+		<!-- Nursing, HHP, PHHP, Freshman -->
+		<div class="row" style="margin-top: 20px">
+			<div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Freshman</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Chase Drayer</li>
+						  <li>Melina Sajous</li>
+					  </ul>
+					   <br />
+                      <br />
+	              </div>
+	            </div>
+			</div>
+            <div class="col-md-3">
+				<div class="panel panel-primary">
+	              <div class="panel-heading">
+	                <h3 class="panel-title" style="text-align: center">Sophomore</h3>
+	              </div>
+	              <div class="panel-body">
+					  <ul style="list-style: square; padding-left: 25px">
+						  <li>Victoria Balda</li>
+						  <li>Daniel Barrera</li>
+						  <li>Jenny Haber</li>
+						  <li>Olivia Vega</li>
+					  </ul>
+	              </div>
+	            </div>
+			</div>
+		</div>
+		
+		<hr style="margin: 0px; color: #777; display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 0 auto; padding: 0; width: 91% "/>
+		
+		<!-- Sophomore -->
+		<div class="row">
+			<div class="col-md-12" style="font-style: italic; text-align: center; margin-top: -50px">
+				<br />
+				<br />
+				<br />
+				<h2>To Life, Liberty, and the Pursuit of Tacos!</h2>
+				<div id="countdown">xx days, xx hrs, xx mins, and xx secs until a Tacorific election!</div>
+			</div>
+		</div>
+		
+      	<hr />
+		<footer>
+			<div class="col-md-4">
+				<p id="footer-left">Made with love, tacos, and <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="http://www.andrewjkerr.com">Andrew Kerr</a></p>
+			</div>
+			<div class="col-md-4">
+				<p id="footer-center">Reg. Pol. Ad. M. Montero</p>
+			</div>
+			<div class="col-md-4">
+				<p id="footer-right"><a href="http://www.facebook.com/tacolibrepartyuf" style="margin-right: 10px"><i class="fa fa-facebook-square fa-2x"></i></a> <a href="http://www.twitter.com/tacolibreparty"><i class="fa fa-twitter-square fa-2x"></i></a></p>
+			</div>
+		</footer>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
