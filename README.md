@@ -10,6 +10,8 @@ After going through a few designs and WordPress templates, I settled on [Bootstr
 
 I also used [FontAwesome](http://fortawesome.github.io/Font-Awesome/) for the amazingly easy to implement and awesome social media icons (and I definitely plan to use more in upcoming projects.)
 
+Also, as much as I hated to do it, most of the CSS is inline since I came up with this pretty quickly. I may or may not clean it up in the future if this site is needed again.
+
 About the Party
 ---------------
 
